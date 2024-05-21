@@ -1,0 +1,18 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+}
+
+.heading {
+  color: #0a1d56;
+  font-weight: 500;
+}
+
+.exercise {
+  margin: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.exercise:last-child {
+  border: none;
+}

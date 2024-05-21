@@ -1,0 +1,24 @@
+{
+  "name": "b14-mod3-practice",
+  "version": "1.0.0",
+  "description": "CS Bootcamp 14 Mod 3 Practice",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host localhost --port 8080",
+    "build": "tsc && vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgrauers/b14-mod3-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgrauers/b14-mod3-practice/issues"
+  },
+  "homepage": "https://github.com/dgrauers/b14-mod3-practice#readme",
+  "devDependencies": {
+    "vite": "^5.0.12"
+  }
+}
