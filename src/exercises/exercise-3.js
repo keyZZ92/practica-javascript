@@ -18,5 +18,5 @@ function vowelsCounter(text) {
     return counter; 
      }
     const text= 'Hello world'
-     const element = document.getElementById ('content')
+     const element = document.getElementById ('practice')
      element.innerHTML = `Text "${text}" contains ${vowelsCounter(text)} vowels`

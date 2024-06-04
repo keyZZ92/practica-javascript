@@ -9,13 +9,12 @@ export function exercise2(number) {
   return `Number ${number} is ${result}`;
 }
 
-
 function evenOrOdd(num) {
   if (num % 2 === 0) {return `Number ${num} is even`} 
   else {`Number ${num} is odd`}
 };
 const message2 = evenOrOdd(8);
 
-const contentElement = document.getElementById('content');
+const contentElement = document.getElementById('practice');
 
 contentElement.innerHTML = `<h1>${message2}</h1>`

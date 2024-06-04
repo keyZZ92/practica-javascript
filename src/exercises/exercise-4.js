@@ -25,5 +25,5 @@ Muestra el resultado de quitar las vocales a un string que pasamos como parámet
         }
     return result;
      }
-     const contentElement = document.getElementById('content');
+     const contentElement = document.getElementById('practice');
      contentElement.innerHTML = removeVowels ('Hi, I am learning Javascript')

@@ -3,20 +3,15 @@ EJERCICIO 1:
 Muestra el siguiente saludo pasando un nombre como parámetro
 “Hello <name>, how are you doing today?”
 */
-//export function exercise1(name) {
-//  return `Hello ${name}, how are you doing today?`;
-//}
-
-
-function greeting (myName){
-    return ( `hello ${myName} , how are you?`)
+export function exercise1(name) {
+    console.log(typeof name)
+    return `Hello ${name}, how are you doing today?`;
     
-};
-const contentElement = document.getElementById('content');
+}
 
-contentElement.innerHTML = greeting ('keyliany')
-
-
+const element= document.getElementById('practice');
+let contentElement = `<h1>${exercise1(5)} </h1>` 
+element.innerHTML = contentElement
 
 
 
@@ -33,4 +28,4 @@ contentElement.innerHTML = greeting ('keyliany')
 //${ greeting + myName +message}
 //</h1>
 //`
-
+*/
