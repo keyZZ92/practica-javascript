@@ -10,31 +10,20 @@ repetitions(‘list’) // result: “LIiSssTttt”
 repetitions(function) // result: “FUuNnnTtttIiiiiOoooooNnnnnnn”
 */
 
-export function palindromo(text) {
-    if (typeof text === "string") {
-        const formattedText = text.toLowerCase().replaceAll(' ', ''); // Eliminar todos los espacios
-        const vowelsAccents = 'áéíóú';
-        const vowelsNoAccents = 'aeiou';
 
-        let noAccents = formattedText;
-        for (let index = 0; index < vowelsAccents.length; index++) {
-            noAccents = noAccents.replaceAll(vowelsAccents.charAt(index), vowelsNoAccents.charAt(index));
+export function repetitions (text) {
+    let result= '';
+  
+  
+    for (let index=0; index < text.length; index++)
+        { 
+            const caracter = text.charAt(index) 
+            const repetida = caracter.toUpperCase()+caracter.toLowerCase().repeat(index)
+            result+= repetida
         }
-
-        for (let index = 0; index < noAccents.length / 2; index++) {
-            const firstIndex = index;
-            const lastIndex = noAccents.length - index - 1;
-            if (noAccents.charAt(firstIndex) !== noAccents.charAt(lastIndex)) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-    return false;
-}
-
-// Ejemplo de uso
-const element = document.getElementById('practice');
-let contentElement = `<h1>${palindromo("Dábale arroz a la zorra el abad")} </h1>`;
-element.innerHTML = contentElement;
+        return result
+  }
+  
+  const element= document.getElementById('practice');
+  let contentElement = `<h1>${repetitions("code")} </h1>` 
+  element.innerHTML = contentElement

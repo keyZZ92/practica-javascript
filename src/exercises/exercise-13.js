@@ -23,3 +23,10 @@ Agrupa en un array las peliculas por categorias:
 ]
 Sugerencia: usa el método "groupBy" de la clase Object
 */
+import { movies } from "/data.js";
+
+
+
+const category = Object.groupBy(movies, (movieCategory) => { return movieCategory.category});
+
+/// no se como mostrar el html
